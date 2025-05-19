@@ -1,0 +1,21 @@
+# Ignorar checkpoints de Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Archivos temporales o de respaldo
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Entornos virtuales
+venv/
+env/
+*.env
+
+# Archivos de Jupyter Notebook temporales
+*.nbconvert.ipynb
+
+# Archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db
