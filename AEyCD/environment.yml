@@ -1,0 +1,15 @@
+name: env-diplodatos-aeycd
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - nb_conda_kernels
+  - numpy
+  - matplotlib
+  - pandas
+  - seaborn
+  - sqlalchemy
+  - plotly
+prefix: /home/gonzalo/miniconda3/envs/env-diplodatos-aeycd
