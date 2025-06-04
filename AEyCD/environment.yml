@@ -1,5 +1,7 @@
 name: env-diplodatos-aeycd
 channels:
+  - conda-forge
+  - defaults
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
@@ -14,4 +16,3 @@ dependencies:
   - plotly
   - python-lsp-server
   - jupyterlab-lsp
-prefix: /home/gonzalo/miniconda3/envs/env-diplodatos-aeycd
