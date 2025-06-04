@@ -12,4 +12,6 @@ dependencies:
   - seaborn
   - sqlalchemy
   - plotly
+  - python-lsp-server
+  - jupyterlab-lsp
 prefix: /home/gonzalo/miniconda3/envs/env-diplodatos-aeycd

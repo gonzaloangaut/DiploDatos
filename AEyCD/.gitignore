@@ -19,3 +19,7 @@ env/
 # Archivos de configuración del sistema operativo
 .DS_Store
 Thumbs.db
+
+# Extension de jupyter
+.virtual_documents/
+
