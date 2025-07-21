@@ -1,7 +1,7 @@
 name: mentoria-aeycd
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
@@ -87,6 +87,8 @@ dependencies:
   - libdeflate=1.22=h5eee18b_0
   - libffi=3.4.4=h6a678d5_1
   - libgcc-ng=11.2.0=h1234567_1
+  - libgfortran-ng=11.2.0=h00389a5_1
+  - libgfortran5=11.2.0=h1234567_1
   - libglib=2.84.2=h37c7471_0
   - libgomp=11.2.0=h1234567_1
   - libiconv=1.16=h5eee18b_3
@@ -138,6 +140,7 @@ dependencies:
   - pure_eval=0.2.3=pyhd8ed1ab_1
   - pycparser=2.22=pyh29332c3_1
   - pygments=2.19.2=pyhd8ed1ab_0
+  - pyparsing=3.2.3=pyhd8ed1ab_1
   - pysocks=1.7.1=pyha55dd90_7
   - python=3.10.18=h1a3bd86_0
   - python-dateutil=2.9.0.post0=pyhe01879c_2
@@ -154,6 +157,8 @@ dependencies:
   - rfc3339-validator=0.1.4=pyhd8ed1ab_1
   - rfc3986-validator=0.1.1=pyh9f0ad1d_0
   - rpds-py=0.22.3=py310h4aa5aa6_0
+  - scikit-learn=1.6.1=py310h6a678d5_0
+  - scipy=1.15.3=py310h525edd1_0
   - seaborn=0.13.2=py310h06a4308_3
   - send2trash=1.8.3=pyh0d859eb_1
   - setuptools=78.1.1=py310h06a4308_0
@@ -164,6 +169,7 @@ dependencies:
   - stack_data=0.6.3=pyhd8ed1ab_1
   - tbb=2021.8.0=hdb19cb5_0
   - terminado=0.18.1=pyh0d859eb_0
+  - threadpoolctl=3.5.0=py310h2f386ee_0
   - tinycss2=1.4.0=pyhd8ed1ab_0
   - tk=8.6.14=h993c535_1
   - tomli=2.2.1=pyhd8ed1ab_1
@@ -205,7 +211,6 @@ dependencies:
       - importlib-resources==6.5.2
       - joblib==1.5.1
       - llvmlite==0.44.0
-      - matplotlib==3.10.3
       - multimethod==1.12
       - networkx==3.4.2
       - numba==0.61.0
@@ -215,7 +220,6 @@ dependencies:
       - puremagic==1.30
       - pydantic==2.11.7
       - pydantic-core==2.33.2
-      - pyparsing==3.2.3
       - pywavelets==1.8.0
       - statsmodels==0.14.5
       - sweetviz==2.3.1
