@@ -10,7 +10,10 @@ The repository contains folders for each course in the diploma:
 - `AEyCD` – Análisis Exploratorio y Curación de Datos (Exploratory Data Analysis and Curation)  
 - `IAA` – Introducción al Aprendizaje Automático (Introduction to Machine Learning)  
 - `AS` – Aprendizaje Supervisado (Supervised Learning)  
-- `ANS` – Aprendizaje No Supervisado (Unsupervised Learning)  
+- `ANS` – Aprendizaje No Supervisado (Unsupervised Learning)
+- `VC` – Visión por Computadora (Computer vision)
+- `DL` – Deep Learning
+- `RL` – Reinforcement Learning
 
 Each course folder includes:  
 - `Ejercicios` (*Exercises*): notebooks provided by professors with practice exercises.  
