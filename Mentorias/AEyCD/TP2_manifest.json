@@ -1,0 +1,73 @@
+{
+  "schema_version": 3,
+  "source_commit": "1c49c73b92e84d3eba2c53f43313ed861d08f896",
+  "source_url": "https://raw.githubusercontent.com/EnzoRg/space_debris/1c49c73b92e84d3eba2c53f43313ed861d08f896/data/raw",
+  "source_sha256": {
+    "debris.json": "8b6043f38307048da392c266c783702ea741a1aeb2d973e823a799b709d47ac7",
+    "rockets.json": "38048acc6272aeabd57a0554b752122933067dc088acc02666fcd9700a0b040b",
+    "satellites.json": "aa008e5ddaecb1c638758225bc7592762a92f5b7a5bd706a4d083771ebd3607d",
+    "ucs-satellite-database.xlsx": "337ec8c8c0ec7bf45a7e8b61842a80688ae5124bfb3cf3f9a4ef2cfee134aae5",
+    "unknown.json": "6837e556a4c08e71b4679e272ae7a3ef86b4a9c1bb63e2248a3d3a6f48bc0377"
+  },
+  "random_seed": 42,
+  "population": "PAYLOAD con coincidencia UCS, catálogo histórico",
+  "target": "EXPECTED_LIFETIME_YRS",
+  "target_units": "años",
+  "target_imputed": false,
+  "features": [
+    "PERIOD",
+    "INCLINATION",
+    "APOGEE",
+    "PERIGEE",
+    "LAUNCH_YEAR",
+    "LAUNCH_MASS_KG",
+    "RCS_SIZE",
+    "COUNTRY",
+    "PURPOSE",
+    "CLASS_OF_ORBIT"
+  ],
+  "exports_preprocessed": false,
+  "split": "aleatorio por NORAD, aproximadamente 60/20/20; no independiente por familia ni temporal",
+  "learned_preprocessing": "make_preprocessor: ajustar dentro de cada fold en TP3",
+  "rows_payload": 7369,
+  "rows_labeled": 5428,
+  "rows_unlabeled": 1941,
+  "invalid_values_to_missing": {
+    "PERIOD": 0,
+    "INCLINATION": 0,
+    "APOGEE": 0,
+    "PERIGEE": 0,
+    "LAUNCH_YEAR": 0,
+    "LAUNCH_MASS_KG": 0,
+    "EXPECTED_LIFETIME_YRS": 0,
+    "PERIGEE > APOGEE (filas)": 0
+  },
+  "checks": {
+    "disjoint_supervised_ids": true,
+    "all_supervised_targets_observed": true,
+    "target_excluded_from_preprocessor": true,
+    "finite_transformed_features": true
+  },
+  "files": {
+    "TP2_DatosDeEntrenamiento.csv": {
+      "rows": 3256,
+      "sha256": "69c22f1655525e44fddbfa08ebcab76b0f45da2d5eeeb21ffa98c03dd0b6711f"
+    },
+    "TP2_DatosDeEvaluacion.csv": {
+      "rows": 1086,
+      "sha256": "a8a3acbbe01d0161cab0195209af9fb904135c138b5fad8cc0af28b433f033ba"
+    },
+    "TP2_DatosDePrueba.csv": {
+      "rows": 1086,
+      "sha256": "e7789d4297e140844a3df3ff4aeede39b504fcbb76cc5a5106491b620725cea5"
+    },
+    "TP2_DatosSinEtiqueta.csv": {
+      "rows": 1941,
+      "sha256": "430c0ca5c8e1e531e5f9cc78c8aefba9acc588b003a432e9209e6f06f2a47f1e"
+    },
+    "TP2_CatalogoCurado.csv": {
+      "rows": 7369,
+      "sha256": "856966c6bbf7eeaa3816c4a1f63f02c39159b6ae7428e4440c55d6d7b06d6b53"
+    }
+  }
+}
