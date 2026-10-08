@@ -1,38 +1,59 @@
-# DiploDatos
+# DiploDatos — Data Science and Machine Learning
 
-Repository with all the projects completed during the ["Diplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones"](https://diplodatos.famaf.unc.edu.ar/) (Diploma in Data Science, Machine Learning and its Applications). 
+Coursework and projects from the **2025 Diplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones** at FaMAF, Universidad Nacional de Córdoba.
 
-## Repository structure
+This repository preserves the course exercises, individual work, and collaborative submissions. Most notebooks are in Spanish.
 
-The repository contains folders for each course in the diploma:
+## Where to start
 
-- `AyVD` – Análisis y Visualización de Datos (Data Analysis and Visualization)  
-- `AEyCD` – Análisis Exploratorio y Curación de Datos (Exploratory Data Analysis and Curation)  
-- `IAA` – Introducción al Aprendizaje Automático (Introduction to Machine Learning)  
-- `AS` – Aprendizaje Supervisado (Supervised Learning)  
-- `ANS` – Aprendizaje No Supervisado (Unsupervised Learning)
-- `VC` – Visión por Computadora (Computer vision)
-- `DL` – Deep Learning
-- `RL` – Reinforcement Learning
+- **[Satellite Data Science](https://github.com/gonzaloangaut/satellite-data-science):** the completed portfolio adaptation of the collaborative satellite project, with revised data curation, model evaluation, and documentation.
+- **[Original satellite project](Mentorias/):** the diploma submissions, from exploratory analysis to supervised and unsupervised learning.
+- **[Computer Vision](VC/):** image classification, convolutional networks, transfer learning, object detection, and segmentation coursework.
+- **[Deep Learning](IAP/):** NLP and language-model assignments, including sentiment analysis and prompting experiments.
 
-Each course folder includes:  
-- `Ejercicios` (*Exercises*): notebooks provided by professors with practice exercises.  
-- `Entregables` (*Deliverables*): projects we developed and submitted during the course.
-- `environment.yml` a conda environment file with all dependencies required to run the notebooks.
+## Repository guide
 
-Additionally, there is a `Mentoría` folder containing the final project of the diploma.  
-The aim of this project was to apply our knowledge to a real-world problem. Our project, *"Predictions in Space: How many satellites and debris can we have?"*, analyzed a dataset of objects in orbit. We first performed data visualization and initial analysis, then applied preprocessing techniques such as categorical encoding, missing-value imputation, and feature scaling. Finally, we applied supervised learning to predict the expected lifetime of the objects and unsupervised learning for clustering. 
+| Folder | Course or project |
+| --- | --- |
+| [`AyVD/`](AyVD/) | Análisis y Visualización de Datos — Data Analysis and Visualization |
+| [`AEyCD/`](AEyCD/) | Análisis Exploratorio y Curación de Datos — Exploratory Data Analysis and Curation |
+| [`IAA/`](IAA/) | Introducción al Aprendizaje Automático — Introduction to Machine Learning |
+| [`AS/`](AS/) | Aprendizaje Supervisado — Supervised Learning |
+| [`ANS/`](ANS/) | Aprendizaje No Supervisado — Unsupervised Learning |
+| [`IAP/`](IAP/) | Introducción al Aprendizaje Profundo — Introduction to Deep Learning |
+| [`VC/`](VC/) | Visión por Computadora — Computer Vision |
+| [`RL/`](RL/) | Reinforcement Learning |
+| [`Mentorias/`](Mentorias/) | Collaborative satellite project |
 
-## How to Use This Repository
+Where present, `Ejercicios/` contains course practice material and `Entregables/` contains submitted assignments. Other courses keep their notebooks directly in the course folder. Environment files are provided for several courses.
 
-1. Clone the repository:  
-   ```bash
-   git clone <repo_url>
-   ```
+## Satellite project
 
-2. Navigate to the desired course folder and create the conda environment:
-   ```bash
-   conda env create -f environment.yml
-   ```
+The collaborative mentorship project, *Predictions in Space: How many satellites and debris can we have?*, explored catalogs of objects in orbit. It included data visualization, cleaning and feature preparation, satellite expected-lifetime prediction, and clustering.
 
-3. Activate the environment and run the notebooks.
+The revised [Satellite Data Science](https://github.com/gonzaloangaut/satellite-data-science) repository is the recommended entry point for reviewing the finished portfolio version. The original diploma submissions remain in `Mentorias/`.
+
+## Running the notebooks
+
+Clone the repository:
+
+```bash
+git clone https://github.com/gonzaloangaut/DiploDatos.git
+cd DiploDatos
+```
+
+Use the environment file for the course you want to explore. For example, for Data Analysis and Visualization:
+
+```bash
+conda env create -f AyVD/environment.yml
+conda activate env-diplodatos-ayvd
+jupyter notebook
+```
+
+Other courses may use different environments or Colab-specific setup cells. Check the course README and notebook before running it. The saved environments reflect the original coursework.
+
+## Background and attribution
+
+Program: [Diplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones](https://diplodatos.famaf.unc.edu.ar/).
+
+The repository includes teaching materials and collaborative work; authorship and group information are retained in the notebooks. The satellite mentorship project was developed by Ana Paula Cobresí, Gonzalo Angaut, Javier Albiero, and Octavio Santi.
